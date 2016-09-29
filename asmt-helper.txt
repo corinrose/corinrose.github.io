@@ -1,0 +1,67 @@
+;;; ===========================================
+;;;  FILE:  asmt-helper.txt
+;;;  CMPU-101, Fall 2016
+;;; ===========================================
+;;;  This file contains the definitions of several
+;;;  Scheme functions that will make your Interactions
+;;;  Window come alive!
+
+;;;  To use the functions defined in this file, begin by copying 
+;;;  this file to your "working directory" (i.e., the directory
+;;;  you are using to store your Scheme program files).  Then, 
+;;;  include the following expression near the top of your
+;;;  Scheme program file:  (load "asmt-helper.txt").  Subsequent
+;;;  Scheme expressions in your program file can then use the
+;;;  functions defined herein.
+
+
+;;;  HEADER
+;;; -------------------------------------------
+;;;  Displays a nice header for your Interactions Window.
+;;;  INPUTS:      
+;;;    NAME           --  A string such as "Luke Hunsberger" or "Barry Obama"
+;;;    LAB-ASMT-INFO  --  A string such as "Lab 2" or "Asmt 6"
+;;;  OUTPUT:  This function does not generate an output value.
+;;;  SIDE EFFECTS:  Prints stuff into the Interactions Window.
+
+(define header
+  (lambda (name lab-asmt-info)
+    (printf "==========================================~%")
+    (printf "  CMPU-101, Fall 2016~%")
+    (printf "  ~A~%" lab-asmt-info)
+    (printf "  ~A~%" name)
+    (printf "==========================================~%~%")))
+
+
+;;;  PROBLEM
+;;; ---------------------------------------------
+;;;  Displays a nice header for a new problem
+;;;  INPUT:  NUM  --  The problem number
+;;;  OUTPUT:  None.
+;;;  SIDE EFFECTS:  Prints info to the Interactions Window
+
+(define problem
+  (lambda (num)
+    (printf "~%----------------~%")
+    (printf " (~A)~%" num)
+    (printf "----------------~%~%")))
+
+
+;;;  TESTER
+;;; --------------------------------------------
+;;;  Displays a Scheme datum then returns the result of evaluating it.
+;;;  INPUT:  datum   --  a Scheme datum
+;;;  OUTPUT:  the result of evaluating that Scheme datum
+;;;  SIDE EFFECTS:  displays the original Scheme datum (unevaluated)
+;;; ------------------------------------------------
+;;;  NOTE:  Due to the way the Default Rule for Evaluating Non-Empty 
+;;;         Lists works, the desired input expression should
+;;;         be QUOTED.  For example, compare (tester (+ 2 3)) and
+;;;         (tester '(+ 2 3)).
+
+(define tester
+  (lambda (datum)
+    (printf "~A ===> " datum)
+    (eval datum)))
+
+
