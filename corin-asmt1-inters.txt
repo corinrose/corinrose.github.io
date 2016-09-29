@@ -1,0 +1,66 @@
+Welcome to DrScheme, version 4.2.1 [3m].
+Language: Swindle; memory limit: 128 megabytes.
+==========================================
+  CMPU-101, Fall 2016
+  asmt1
+  Corin Rose
+==========================================
+
+
+----------------
+ (1)
+----------------
+
+(time-of-day 12 0) ===> NOON
+(time-of-day 8 24) ===> AM
+(time-of-day 23 13) ===> PM
+(time-of-day 0 0) ===> MIDNIGHT
+
+----------------
+ (2)
+----------------
+
+(compute-tax 124) ===> 12.4
+(compute-tax 30000) ===> 4000
+(compute-tax 24023) ===> 3103.45
+(compute-tax 100000) ===> 21500.0
+
+----------------
+ (3)
+----------------
+
+(alt-sum 1) ===> 1
+(alt-sum 2) ===> 1/2
+(alt-sum 3) ===> 5/6
+(alt-sum 4) ===> 7/12
+(alt-sum 23) ===> 3825136961/5354228880
+
+----------------
+ (4)
+----------------
+
+num-rows: 3
+---
+--
+-
+woah thats a nice triangle
+
+num-rows: 4
+----
+---
+--
+-
+woah thats a nice triangle
+
+num-rows: 8
+--------
+-------
+------
+-----
+----
+---
+--
+-
+woah thats a nice triangle
+
+> 

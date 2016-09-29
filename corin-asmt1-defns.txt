@@ -1,0 +1,120 @@
+
+;; =========================
+;;  CMPU-101-05, Fall 2016
+;;  Assignment 1, Sept. 13, 2016
+;;  Corin Rose
+;; =========================
+
+(load "asmt-helper.txt")
+(header "Corin Rose" "asmt1")
+
+(problem 1)
+
+;; time-of-day
+;; --------------------------
+;; INPUTS: mil-hrs (hours in military time), min (minutes)
+;; OUTPUTS: MIDNIGHT, AM, NOON, PM
+
+(define time-of-day
+  (lambda (mil-hrs min)
+    (cond 
+      ;; if time equals 00:00, return MIDNIGHT
+      ((and (= mil-hrs 0 ) (= min 0)) 'MIDNIGHT)   
+      ;; if time equals 12:00, return NOON
+      ((and (= mil-hrs 12) (= min 0)) 'NOON    )
+      ;; if time is neither of those special cases and its before noon, return AM
+      (     (< mil-hrs 12)            'AM      )
+      ;; if time is none of those and its after noon, return PM
+      (     (> mil-hrs 12)            'PM      )))) 
+
+(tester '(time-of-day 12 0))
+(tester '(time-of-day 8 24))
+(tester '(time-of-day 23 13))
+(tester '(time-of-day 0 0))
+
+(problem 2)
+
+;; compute-tax
+;; --------------------------
+;; INPUTS: income
+;; OUTPUTS: tax (tax owed based on income)
+
+(define compute-tax
+  (lambda (income)
+    (cond 
+      ;; for income below $10,000, return 10% of income
+      ((<= income 10000) (* income .1))                        
+      ;; for income between $10,000 and $30,000, return 10% of 10,000 plus 15% of the rest
+      ((and (> income 10000) (< income 30000)) (+ 1000 (* (- income 10000) .15))) 
+      ;; for income above $30,000, return 10% of 10,000 plus 15% of 20,000, and 25% of the rest 
+      ((>= income 30000) (+ 1000 3000 (* (- income 30000) .25))))))                    
+
+(tester '(compute-tax 124))
+(tester '(compute-tax 30000))
+(tester '(compute-tax 24023))
+(tester '(compute-tax 100000))
+
+(problem 3)
+
+;; alt-sum
+;; --------------------------
+;; INPUTS: n, number of recursions
+;; OUTPUTS: r, the result of the recursive sum (1 + 1/2 + ... + 1/n)
+
+(define alt-sum
+  (lambda (n)
+    (cond 
+      ;; base case - if n is 1, return 1
+      ((= n 1) 1)
+      ;; even case - recursively plug n-1 into alt-sum 
+      ;; (until n=1, see comment above) and subtract 1/n
+      ((even? n) (- (alt-sum (- n 1)) (/ 1 n)))
+      ;; odd case - recursively plug n-1 into alt-sum 
+      ;; (until n=1, see comment above) and add 1/n
+      ((odd?  n) (+ (alt-sum (- n 1)) (/ 1 n)))))) 
+
+(tester '(alt-sum 1))
+(tester '(alt-sum 2))
+(tester '(alt-sum 3))
+(tester '(alt-sum 4))
+(tester '(alt-sum 23))
+
+(problem 4)
+
+;;  PRINT-N-DASHES  --  as seen in class, and in Lab 3
+;; -----------------------------------------------------
+;;  INPUT:  N, a non-negative integer
+;;  OUTPUT:  Nothing
+;;  SIDE EFFECT:  Prints a row of N dashes in the interactions
+;;                window, followed by a "newline".
+
+(define print-n-dashes
+  (lambda (n)
+    (cond
+      ((<= n 0)
+       (newline))
+      (else
+       (printf "-")
+       (print-n-dashes (- n 1))))))
+
+;; print-upside-down-triangle
+;; --------------------------
+;; OUTPUTS: n/a
+;; OTHER: prints an upside-down triangle to interactions window with num-rows rows
+
+(define print-upside-down-triangle
+  (lambda (num-rows)
+    ;; print some dashes
+    (print-n-dashes num-rows)                          
+    (if (= num-rows 1)
+        ;; compliment the complete triangle and slap out some newlines, if we're done
+        (printf "woah thats a nice triangle\n\n")      
+        ;; recursively print n-1 dashes (until n=1)
+        (print-upside-down-triangle (- num-rows 1)))))
+
+(printf "num-rows: 3\n")
+(print-upside-down-triangle 3)
+(printf "num-rows: 4\n")
+(print-upside-down-triangle 4)
+(printf "num-rows: 8\n")
+(print-upside-down-triangle 8)
