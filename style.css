@@ -11,7 +11,7 @@ body {
 	box-shadow: 6px 6px 2px 2px #111;
 	padding: 50px;
 	position: relative;
-	animation: dropincard 1s;
+	animation: dropincard .2s;
 	animation-fill-mode: forwards;
 }
 
@@ -22,25 +22,21 @@ body {
 	text-decoration: none;
 	display: inline;
 	float: left;
-	top: -10px;
+	position: relative;
+	top: -8px;
 	left: 0px;
 }
 
 a {
 	text-decoration: none;
-	color: #202729
 	font-family: "Open Sans";
-	font-size: 28px;
-	position: relative;
-	left: -70px;
-	top: 0px;
-	padding: 10px;
+	color: #202729;
+	padding: 4px;
 }
 
 a:hover {
 	background-color: #202729;
 	color: #fff;
-	font-family: "Open Sans";
 }
 
 .navbar {
@@ -55,13 +51,25 @@ a:hover {
 }
 
 @keyframes dropincard {
-	from {top: -1000px;}
-	to   {top:  100px;}
+	from {top: -1000px;
+	      opacity: 0;}
+	to   {top:  100px;
+	      opacity: 1;}
 }
 
 @keyframes dropinbar {
-	from {top: -2000px;}
-	to   {top: 0px;}
+	from {top: -2000px;
+	      opacity: 0;}
+	to   {top: 0px;
+	      opacity: 1;}
 }
 
-li {display: inline;}
+li {
+	display: inline;
+	color: #202729
+	font-family: "Open Sans";
+	font-size: 28px;
+	position: relative;
+	left: -70px;
+	top: 0px;
+}
