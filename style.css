@@ -11,8 +11,8 @@ body {
 	box-shadow: 6px 6px 2px 2px #111;
 	padding: 50px;
 	position: relative;
-	top: 200px;
 	animation: dropincard 1s;
+	animation-fill-mode: forwards;
 }
 
 .name {
@@ -53,7 +53,7 @@ body {
 
 @keyframes dropincard {
 	from {top: -1000px;}
-	to   {top:  200px;}
+	to   {top:  100px;}
 }
 
 @keyframes dropinbar {
