@@ -4,14 +4,14 @@ body {
 
 .card {
 	background-color: #fff;
-	width: 960px;
-	height: 540px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 50%;
+	height: 50%;
+	margin-left: 20%;
+	margin-right: 20%;
 	box-shadow: 6px 6px 2px 2px #111;
 	padding: 50px;
-	position: relative;
-	animation: dropincard .2s;
+	position: fixed;
+	animation: dropincard .5s;
 	animation-fill-mode: forwards;
 }
 
@@ -47,13 +47,14 @@ a:hover {
 	padding: 10px;
 	text-align: center;
 	animation: dropinbar 1s;
-	position: relative;
+	position: fixed;
+	width: 100%;
 }
 
 @keyframes dropincard {
-	from {top: -1000px;
+	from {top: -2000px;
 	      opacity: 0;}
-	to   {top:  100px;
+	to   {top:  150px;
 	      opacity: 1;}
 }
 
