@@ -1,37 +1,26 @@
 body {
 	background-color: #202729;
+	padding: 0px;
+	margin: 0px;
 }
 
 .card {
 	background-color: #fff;
 	width: 50%;
 	height: 50%;
-	margin-left: 20%;
-	margin-right: 20%;
+	left: 50%;
+	transform: translate(-50%);
 	box-shadow: 6px 6px 2px 2px #111;
 	padding: 50px;
 	position: fixed;
-	animation: dropincard .5s;
-	animation-fill-mode: forwards;
-}
-
-.name {
-	font-family: "Oswald";
-	font-size: 32px;
-	color: #202729;
-	text-decoration: none;
-	display: inline;
-	float: left;
-	position: relative;
-	top: -8px;
-	left: 0px;
 }
 
 a {
 	text-decoration: none;
-	font-family: "Open Sans";
 	color: #202729;
-	padding: 4px;
+	font-family: "Oswald";
+	font-size: 32px;
+	padding: 10px;
 }
 
 a:hover {
@@ -40,15 +29,17 @@ a:hover {
 }
 
 .navbar {
-	#box-shadow: 6px 6px 2px 2px #111;
-	height: 32px;
 	background-color: #fff;
-	margin: -10px;
-	padding: 10px;
-	text-align: center;
-	animation: dropinbar 1s;
 	position: fixed;
 	width: 100%;
+	margin: 0px;
+}
+
+.navitems {
+	position: fixed;
+	display: inline;
+	left: 50%;
+	transform: translateX(-38%);
 }
 
 @keyframes dropincard {
@@ -59,18 +50,22 @@ a:hover {
 }
 
 @keyframes dropinbar {
-	from {top: -2000px;
+	from {top: -4000px;
 	      opacity: 0;}
 	to   {top: 0px;
 	      opacity: 1;}
 }
 
+@keyframes slideincard {
+	from{left: 2000px;
+	     opacity: 0;}
+	to{left: 50%;
+	   opacity: 1px}
+}
+
 li {
+	
 	display: inline;
-	color: #202729
-	font-family: "Open Sans";
-	font-size: 28px;
 	position: relative;
-	left: -70px;
-	top: 0px;
+	left: -50px;
 }
