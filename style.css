@@ -69,3 +69,13 @@ li {
 	position: relative;
 	left: -50px;
 }
+
+.footer {
+	position: fixed;
+	bottom:  0px;
+	font-size: 16px;
+	font-family: "Open Sans";
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
