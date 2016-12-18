@@ -1,81 +1,37 @@
 body {
-	background-color: #202729;
 	padding: 0px;
 	margin: 0px;
+	color: #202729;
+	font-family: "monospace";
 }
 
-.card {
-	background-color: #fff;
-	width: 50%;
-	height: 50%;
-	left: 50%;
-	transform: translate(-50%);
-	box-shadow: 6px 6px 2px 2px #111;
-	padding: 50px;
-	position: fixed;
+#resume-button {
+	
 }
+
+div#content {
+	text-align: center;
+	position: relative;
+	top: 300px;
+}
+
+
+#navbar {
+	text-align: center;
+}
+
 
 a {
 	text-decoration: none;
+}
+
+a li {
 	color: #202729;
-	font-family: "Oswald";
-	font-size: 32px;
+	display: inline;
 	padding: 10px;
 }
 
-a:hover {
+a li:hover {
 	background-color: #202729;
 	color: #fff;
-}
-
-.navbar {
-	background-color: #fff;
-	position: fixed;
-	width: 100%;
-	margin: 0px;
-}
-
-.navitems {
-	position: fixed;
-	display: inline;
-	left: 50%;
-	transform: translateX(-38%);
-}
-
-@keyframes dropincard {
-	from {top: -2000px;
-	      opacity: 0;}
-	to   {top:  150px;
-	      opacity: 1;}
-}
-
-@keyframes dropinbar {
-	from {top: -4000px;
-	      opacity: 0;}
-	to   {top: 0px;
-	      opacity: 1;}
-}
-
-@keyframes slideincard {
-	from{left: 2000px;
-	     opacity: 0;}
-	to{left: 50%;
-	   opacity: 1px}
-}
-
-li {
-	
-	display: inline;
-	position: relative;
-	left: -50px;
-}
-
-.footer {
-	position: fixed;
-	bottom:  0px;
-	font-size: 16px;
-	font-family: "Open Sans";
-	color: #fff;
-	text-align: center;
-	width: 100%;
 }
