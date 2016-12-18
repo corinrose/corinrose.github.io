@@ -60,12 +60,6 @@ h1#cat-title {
 	text-align: right;
 }
 
-
-table {
-	width: 100%;
-	clear: both;
-}
-
 th {
 	font-size: 32px;
 	margin: 100px;
@@ -79,9 +73,13 @@ table {
 	position: relative;
 	top: 20px;
 	border-spacing: 10px;
+	width: 100%;
+	clear: both;
+	
 }
 
 td#content {
 	padding-left: 20px;
+	
 }
 
