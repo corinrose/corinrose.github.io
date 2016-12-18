@@ -29,19 +29,27 @@ h1#name {
 	font-size: 48px;
 }
 
-category {
-	margin: 100px;
-}
-
-h1#cat-title {
-	font-size: 32px;
-	float: left;
-	margin: 50px;
+table {
+	position: relative;
+	top: 20px;
+	border-spacing: 0px;
+	width: 100%;
 	clear: both;
-	width: 200px;
-	font-style: italic;
+	border-spacing: 15px;
+	
 }
 
+th {
+	font-size: 32px;
+	clear: both;
+	font-style: italic;
+	border-right: thin solid #202729;
+	padding-right: 50px;
+}
+
+td#content {
+	padding-left: 20px;
+}
 
 #content-title {
 	font-weight: bold;
@@ -49,7 +57,6 @@ h1#cat-title {
 
 #content-sub {
 	font-style: italic;
-	margin-top: 0px;
 	position: relative;
 	left: 20px;
 	top: -10px;
@@ -59,27 +66,3 @@ h1#cat-title {
 	font-style: italic;
 	text-align: right;
 }
-
-th {
-	font-size: 32px;
-	margin: 100px;
-	clear: both;
-	width: 300px;
-	font-style: italic;
-	border-right: thin solid #202729;
-}
-
-table {
-	position: relative;
-	top: 20px;
-	border-spacing: 10px;
-	width: 100%;
-	clear: both;
-	
-}
-
-td#content {
-	padding-left: 20px;
-	
-}
-
