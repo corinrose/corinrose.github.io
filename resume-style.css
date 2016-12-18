@@ -1,0 +1,87 @@
+
+body {
+	font-family: monospace;
+	color: #202729;
+}
+
+#headshot {
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 15px;
+	margin-right: 25px;
+}
+
+div#resume {
+	width: 50%;
+	background-color: #eee; 
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 50px;
+}
+
+div#desc {
+	font-size: 16px;
+}
+
+h1#name {
+	font-size: 48px;
+}
+
+category {
+	margin: 100px;
+}
+
+h1#cat-title {
+	font-size: 32px;
+	float: left;
+	margin: 50px;
+	clear: both;
+	width: 200px;
+	font-style: italic;
+}
+
+
+#content-title {
+	font-weight: bold;
+}
+
+#content-sub {
+	font-style: italic;
+	margin-top: 0px;
+	position: relative;
+	left: 20px;
+	top: -10px;
+}
+
+#content-desc {
+	font-style: italic;
+	text-align: right;
+}
+
+
+table {
+	width: 100%;
+	clear: both;
+}
+
+th {
+	font-size: 32px;
+	margin: 100px;
+	clear: both;
+	width: 300px;
+	font-style: italic;
+	border-right: thin solid #202729;
+}
+
+table {
+	position: relative;
+	top: 20px;
+	border-spacing: 10px;
+}
+
+td#content {
+	padding-left: 20px;
+}
+
