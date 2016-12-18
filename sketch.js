@@ -20,8 +20,8 @@ function draw() {
 		xoff += 0.01;
 	}
 
-	vertex(screen.width, screen.height);
-	vertex(0, screen.height);
+	vertex(screen.width, screen.height + 100);
+	vertex(0, screen.height + 100);
 
 	endShape();
 

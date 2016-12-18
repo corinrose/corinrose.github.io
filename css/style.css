@@ -1,8 +1,8 @@
 body {
-	padding: 0px;
-	margin: 0px;
 	color: #202729;
 	font-family: "monospace";
+	text-align: center;
+	margin: 0px;
 }
 
 #resume-button {
@@ -12,14 +12,8 @@ body {
 div#content {
 	text-align: center;
 	position: relative;
-	top: 300px;
+	top: 250px;
 }
-
-
-#navbar {
-	text-align: center;
-}
-
 
 a {
 	text-decoration: none;
