@@ -10,14 +10,13 @@ function draw() {
 
 	fill(color(30, 30, 40))
 	
-
 	var xoff = 0.01;
 
 	beginShape();
 
 	for (var i = 0; i < windowWidth; i += 1) {
-		vertex(i, 450 + noise(xoff, yoff)*50);
-		xoff += 0.01;
+		vertex(i, 500 + noise(xoff, yoff)*50);
+		xoff += 0.005;
 	}
 
 	vertex(windowWidth, windowHeight);
