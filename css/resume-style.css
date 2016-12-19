@@ -40,29 +40,25 @@ table {
 }
 
 th {
-	font-size: 32px;
+	font-size: 16px;
 	clear: both;
 	font-style: italic;
 	border-right: thin solid #202729;
 	padding-right: 50px;
 }
 
-td#content {
-	padding-left: 20px;
-}
-
-#content-title {
+.content-title {
 	font-weight: bold;
 }
 
-#content-sub {
+.content-sub {
 	font-style: italic;
 	position: relative;
 	left: 20px;
 	top: -10px;
 }
 
-#content-desc {
+.content-desc {
 	font-style: italic;
 	text-align: right;
 }
