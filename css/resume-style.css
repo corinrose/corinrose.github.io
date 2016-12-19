@@ -53,6 +53,10 @@ th {
 	padding-right: 50px;
 }
 
+td#col2 {
+	width: 400px;
+}
+
 .content-title {
 	font-weight: bold;
 }
