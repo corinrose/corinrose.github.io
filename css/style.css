@@ -3,6 +3,7 @@ body {
 	font-family: "monospace";
 	text-align: center;
 	margin: 0px;
+	overflow: hidden;
 }
 
 #resume-button {

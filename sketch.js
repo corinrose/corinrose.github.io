@@ -2,7 +2,7 @@ var yoff = 0.0;
 
 
 function setup() {
-	createCanvas(screen.width, 800);
+	createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -15,13 +15,13 @@ function draw() {
 
 	beginShape();
 
-	for (var i = 0; i < screen.width; i += 1) {
+	for (var i = 0; i < windowWidth; i += 1) {
 		vertex(i, 450 + noise(xoff, yoff)*50);
 		xoff += 0.01;
 	}
 
-	vertex(screen.width, screen.height + 100);
-	vertex(0, screen.height + 100);
+	vertex(windowWidth, windowHeight);
+	vertex(0, windowHeight);
 
 	endShape();
 
