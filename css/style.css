@@ -10,7 +10,7 @@ body {
 	
 }
 
-div#content {
+section {
 	text-align: center;
 	position: relative;
 	top: 250px;
@@ -29,4 +29,9 @@ a li {
 a li:hover {
 	background-color: #202729;
 	color: #fff;
+}
+
+h1 {
+	position: relative;
+	top: 150px;
 }
