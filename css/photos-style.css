@@ -1,24 +1,33 @@
-.frame {
-	background-color: #202729;
-	width: 800px;
-	height: 550px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	top: -20px;
-	box-shadow: 3px 3px 2px 2px #bbb;
-}
-
-img {
-	margin: 25px;
-}
-
-p {
-	font-family: "Open Sans";
+body {
 	color: #202729;
+	font-family: "monospace";
+	text-align: center;
+	margin: 0px;
+	overflow: hidden;
 }
 
-.card {
-	position: relative;
-	top: 150px;
+#resume-button {
+	
 }
+
+section {
+	text-align: center;
+	position: relative;
+	top: 250px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a li {
+	color: #202729;
+	display: inline;
+	padding: 10px;
+}
+
+a li:hover {
+	background-color: #202729;
+	color: #fff;
+}
+
