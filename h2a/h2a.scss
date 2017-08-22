@@ -1,0 +1,112 @@
+/*!
+ * Persefone theme v4.0.0-alpha.6
+ * Homepage: https://pingendo.com
+ * Copyright 2014-2017 Pingendo
+ * Licensed under MIT
+ * Based on Bootstrap
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald'); 
+@import url('https://fonts.googleapis.com/css?family=Open Sans'); 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+$theme-colors: (
+  primary: #202729,
+  secondary: #222,
+  light: #f3f3f3,
+  dark: #222,
+  info: #17a2b8,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+
+  
+// Options
+// 
+// Quickly modify global styling by enabling or disabling optional features.
+  
+$enable-rounded:            true !default;
+$enable-shadows:            true;
+
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+// Variables
+//
+// Theme settings.
+
+$body-bg: white;
+$body-color: #202729;
+
+
+
+
+
+$body-color-inverse: invert($body-color) !default;
+$link-color: #0068b4;
+
+
+
+
+$font-family-base: Open Sans;
+
+
+$headings-font-family: Oswald;
+
+
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+
+
+$border-radius: 0px;
+$border-radius-lg: $border-radius * 1.2;$border-radius-sm: $border-radius * .8;$spacer: 1.5rem;
+@import 'bootstrap-4.0.0-beta.1';
+
+
+.bg-opaque {
+  background-position: center;
+  overflow:hidden;
+    position:relative;
+    > *:first-child:before {
+      content:'';
+      width:100%;
+      height:100%;
+      display:block;
+      position:absolute;
+      left:0px;
+      top:0px;
+      background: rgba(0, 0, 0, 0.7) 0%;
+      pointer-events:none;
+    }
+  
+}
+
+.bg-gradient {
+  background-position: center;
+  overflow:hidden;
+    position:relative;
+    > *:first-child:before {
+      content:'';
+      width:100%;
+      height:100%;
+      display:block;
+      position:absolute;
+      left:0px;
+      top:0px;
+      @include gradient-directional(theme-color("primary"),transparentize(darken(theme-color("primary"),50%),0.5),20deg);
+      pointer-events: none;
+  }
+}
+
+
+body > * {
+  background-size: cover;
+}
+.nav-item {
+	color: #5155ff;
+}
