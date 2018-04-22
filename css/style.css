@@ -1,33 +1,45 @@
 body {
-	color: #202729;
-	font-family: "monospace";
-	text-align: center;
-	margin: 0px;
-	overflow: hidden;
+  color: #202729;
+  font-family: "monospace";
+  text-align: center;
+  margin: 0px;
+  overflow: hidden;
 }
 
 #resume-button {
-	
+  
 }
 
 section {
-	text-align: center;
-	position: relative;
-	top: 250px;
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+
+@keyframes fadeIn {
+  0% {
+      background-color: #fff;
+      color: #202729;
+    }
+
+  100% {
+        background-color: #202729;
+        color: #fff;}
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a li {
-	color: #202729;
-	display: inline;
-	padding: 10px;
+  color: #202729;
+  display: inline;
+  padding: 10px;
 }
 
 a li:hover {
-	background-color: #202729;
-	color: #fff;
+  animation: fadeIn .25s;
+  background-color: #202729;
+  color: #fff;
 }
 
