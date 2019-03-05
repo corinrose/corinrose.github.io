@@ -1,9 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Oswald');
+
 body {
   color: #202729;
-  font-family: "monospace";
+  font-family: "Fira Mono";
   text-align: center;
   margin: 0px;
   overflow: hidden;
+  background-image: url("resources/dots.png");
 }
 
 #resume-button {
@@ -43,3 +47,6 @@ a li:hover {
   color: #fff;
 }
 
+h1 {
+  font-family: "Oswald";
+}
