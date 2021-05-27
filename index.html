@@ -6,25 +6,166 @@
     <title>Corin Rose</title>
 
     <link href="css/style.css" rel="stylesheet">
+    <script src="lib/p5.min.js"></script>
+    <script src="js/sketch.js"></script>
+  </head>
 
   <body>
   <nav>
     <ul>
-      <a href="resume.html"><li>resume</li></a>
-      <a href="blog.html"><li>blog</li></a>
+      <a href="/"><li>home</li></a>
+      <a href="#content"><li>resume</li></a>
       <a href="photos.html"><li>photography</li></a>
     </ul>
   </nav>
-  
-  <section>
-  
+ 
+  <section id="banner">
       <h1>Corin Rose</h1>
-      <p>[work in progress]</p>
-      
-      <a href="resume.html"><button id="resume-button">resume</button></a>
-  <section>
+      <p>[under construction]</p>
+	    <h1><a id="contentButton" href="#content" style="color: #202729;">⬇</a></h1>
+  </section>
+
+  <section id="content">
+  <div id="resume">
+  <div id="resumeHeader">
+	<img src="resources/headshot.png" id="headshot"></img>
+
+	<br>
+
+	<p>Computer Science and Mathematics</p>
+	<p>Vassar College Class of 2020</p>
+	<hr>
+	<p>email@corin.website | corin@ebumps.com | <a href="http://www.corin.website">corin.website</a> | <a href=https://www.linkedin.com/in/corin-rose-b04329149/>LinkedIn</a></p>
+    </div>
+
+
+  <table>
+  <tr>
+    <th rowspan="2">Education</th>
+    <td id="col2">
+      <p class="content-title">Vassar College</p>
+      <p class="content-sub">B.A. Computer Science and Mathematics</p>
+    </td>
+    <td class="content-desc" id="col3">2020</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Maine School of Science and Mathematics (MSSM)</p>
+      <p class="content-sub">High School Diploma</p>
+    </td>
+    <td class="content-desc">2016</td>
+  </tr>
+  <tr>
+    <th rowspan="4">Skills</th>
+    <td>
+      <p class="content-title">Programming</p>
+      <p class="content-sub">Python, C/C++, Haskell, Full Stack Web</p>
+    </td>
+    <td class="content-desc">-</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Software</p>
+      <p class="content-sub">GNU/Linux, GIMP, Inkscape</p>
+    </td>
+    <td class="content-desc">-</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Cryptocurrencies</p>
+      <p class="content-sub">Bitcoin, Ethereum</p>
+    </td>
+    <td class="content-desc">-</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Hardware</p>
+      <p class="content-sub">3D Printing, Arduino</p>
+    </td>
+    <td class="content-desc">-</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Projects</th>
+    <td>
+      <p class="content-title">Computational Biology @ <a href="https://www.jax.org/">The Jackson Laboratory</a></p>
+      <a class="content-sub" href="resources/CompBio.pdf">Establishing the Causual Relationship Between Obesity, Insulin Resistance, and Autophagy </a>
+    </td>
+    <td class="content-desc">2015-2016</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Google igniteCS Student Leader</p>
+      <p class="content-sub">Corin led a team of about 20 Vassar students in teaching local high school students how to code in association with Google. With this team, he developed the course content for a ten session, once per week overview of Python. The first five classes teach the basics of programming, while the next five each focus on a specific topic like Data Science or Blockchains. After learning the basics, students utilize and refine their skills by investigating one of these five topics further on their own. See <a href=https://stories.vassar.edu/2017/171207-teaching-kids-to-code.html><i>Teaching Kids to Code</i></a> for details of the Spring 2017 program!</p>
+    </td>
+    <td class="content-desc">2017 - 2018</td>
+  </tr>
+  <tr>
+    <th rowspan="7">Work</th>
+    <td>
+      <p class="content-title">Penetration Testing</p>
+      <p class="content-sub">Corin interned for cybersecurity firm aizoOn Technology Consulting, tracking the development of a smart micro-brewery and developing a detailed risk assessment of the potential attack vectors that the brewery exposed.
+        <br>
+        <a href="resources/aizoOn-rec.pdf"> (letter of reccomendation)
+      </p>
+    </td>
+    <td class="content-desc">Summer 2016</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Teaching Assisstant</p>
+      <p class="content-sub">Building on the course content he developed for Google igniteCS, with the help of one other student and a Vassar computer science professor, Corin developed and helped teach a 6-week introductory course to computer science in Python, based on the Harvey Mudd CS for All course.
+      This Harvey Mudd class became a 6-week, 6-hour a day course that covers computer science in as much detail as possible for 16 students with limited to no background in CS.
+      This was a trial run of the course which may soon become a full for-credit course in the introductory sequence of the Vassar CS department.
+      You can see the course content at <a href="https://cscamp.cs.vassar.edu/">https://cscamp.cs.vassar.edu/</a></p>
+    </td>
+    <td class="content-desc">Summer 2018</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Theatrical Journeyman and Assistant Technical Director</p>
+      <p class="content-sub">Corin built sets for the nationally recognized Vassar Drama Department. His final year at Vassar, Corin served as the Scene Shop Intern, which placed him in a supervisory leadership role over the other students in the scene shop. In this role, he worked asthe Assistant Technical Director to manage the scene shop workers and lead projects ranging from small detail work to large scale structural projects.</p>
+    </td>
+    <td class="content-desc">2016 - 2020</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Technology Director</p>
+      <p class="content-sub">Corin managed the hardware, software, and website for the WVKR independent radio station.</p>
+    </td>
+    <td class="content-desc">2017 - 2020</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Blockchain Consulting</p>
+      <p class="content-sub">Occasionally sub-contracting for <a href="http://fitznerblockchain.consulting">Fitzner Blockchain Consulting</a>, generally reviewing token sale whitepapers to evaluate the project's technical feasability and suggest changes to the logic or to the technologies utilized. The first question: do you really need a blockchain? </p>
+    </td>
+    <td class="content-desc">2018 - 2020</td>
+  </tr>
+  <tr>
+    <td>
+      <p class="content-title">Student Research Fellow</p>
+      <p class="content-sub">Through Vassar's <a href="https://ursi.vassar.edu/">URSI</a> program, Corin worked with a professor at Vassar College in collaboration with the <a href="https://smalldata.io">Small Data Lab</a> at Cornell Tech developing a web app to act as the front end for <a href="https://ancile-project.github.io/">Ancile<a/>, a privacy aware data management platform. This project acts as a layer between data producers like Facebook & Google and data consumers like the company you work for or your school, and gives users complete control over who is allowed to use their data for what. Corin's job was to make it user friendly!</p>
+    </td>
+    <td class="content-desc">Summer 2019</td>
+  </tr>
+  <tr>
+    <td>
+	    <p class="content-title">Co-Founder and CTO, <a href="https://www.ebumps.com">eBumps</a></p>
+      <p class="content-sub">Getting everyday drivers paid to display digital ads.</p>
+    </td>
+    <td class="content-desc">2020 - Present</td>
+  </tr>
+  </table>
+  </div>
+  </section>
+
+  <footer>
+
+  <a href="#"><h1>⬆</h1></a>
+
+  </footer>
+
   </body>
-<script src="lib/p5.min.js"></script>
-<script src="sketch.js"></script>
+
 </html>
 

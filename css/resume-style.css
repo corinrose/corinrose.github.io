@@ -12,7 +12,7 @@ body {
 	margin-right: 25px;
 }
 
-div#resume {
+#resume {
 	width: 50%;
 	background-color: #eee; 
 	position: absolute;
@@ -21,11 +21,11 @@ div#resume {
 	padding: 50px;
 }
 
-div#desc {
+#desc {
 	font-size: 16px;
 }
 
-h1#name {
+#name {
 	font-size: 48px;
 }
 
